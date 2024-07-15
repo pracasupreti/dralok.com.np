@@ -21,6 +21,10 @@ nav ul li{
     /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .4); */
       
 }
+a:hover{
+    color: #4b4b4b;
+text-decoration: none;
+}
 
     .testimonial-card-1 {
         background-color: white;
@@ -166,7 +170,14 @@ padding: 2px;
     color: #ffffff;
     text-decoration: none;
 }
+.footer-top{
+background-color: #008000;
+color: white;
+height: 350px;
+align-items: center;
+display: flex;
 
+}
 
 
 

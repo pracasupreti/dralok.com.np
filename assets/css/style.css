@@ -143,6 +143,12 @@ nav a{
     list-style-type: decimal;
     color: white;
 }
+
+/* image thumbnail */
+.personal-img-thumbnail{
+    width: 100%;
+    height: auto;
+}
 .carousel-indicators-numbers {
     li {
       text-indent: 0;

@@ -65,7 +65,7 @@ nav a{
     .carousel-control-next-1 {
         position: absolute;
         /* top: 117px; */
-        bottom: 31px!important;
+        bottom: 13px!important;
         right: 0;
         height: 100%;
         z-index: 1;
@@ -75,7 +75,7 @@ nav a{
         align-items: center;
         -ms-flex-pack: center;
         justify-content: center;
-        width: 10%!important;
+        width: 20%!important;
         padding: 0;
         color: #fff;
         text-align: center;
@@ -87,8 +87,8 @@ nav a{
     .carousel-control-prev-1 {
         position: absolute;
         /* top: 117px; */
-        bottom: 31px!important;
-        
+        bottom: 13px!important;
+        height: 100%;
         z-index: 1;
         display: -ms-flexbox;
         display: flex;
@@ -96,7 +96,7 @@ nav a{
         align-items: center;
         -ms-flex-pack: center;
         justify-content: center;
-        width: 10%!important;
+        width: 20%!important;
         padding: 0;
         color: #fff;
         text-align: right;

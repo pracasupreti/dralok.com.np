@@ -149,7 +149,7 @@ padding: 2px;
     width: 16px;
     margin-right: 11px;
     -webkit-filter: invert();
-    /* filter: invert(); */
+    filter: invert();
 }
 .footer-link{
     margin-top: 20px;

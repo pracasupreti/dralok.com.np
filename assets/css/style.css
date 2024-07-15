@@ -26,6 +26,14 @@ a:hover{
 text-decoration: none;
 }
 
+/* breadcrumb */
+.breadcrumb-custom{
+    background-color: #008000;
+    height: 150px;
+    align-items: center;
+    display: flex;
+}
+
     .testimonial-card-1 {
         background-color: white;
         border-radius: 10px;

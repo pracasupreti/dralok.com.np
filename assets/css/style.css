@@ -52,7 +52,24 @@ nav a{
     width: 200px;
     height: 200px;
 }
+/* team member section in about*/
+.team-card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    img{
+        width: 80%;
+        height: auto;
 
+    }
+}
+
+
+
+/* team member section end */
     .carousel-indicators{
         left: auto;
     }
@@ -114,7 +131,8 @@ nav a{
 /* about certificate */
 
 .certificate img{
-    width: 62%;
+    /* width: 62%; */
+    width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -141,6 +159,7 @@ nav a{
         margin: 0 2px;
         width: 30px;
         height: 30px;
+        cursor: pointer;
         background-color: #337ab7;        
       }
     }
@@ -168,6 +187,16 @@ padding: 2px;
  }
 
 
+
+
+
+
+
+
+
+
+
+ 
 /* footer */
 .footer-icon{
     /* color: #ffffff; */

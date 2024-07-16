@@ -241,7 +241,8 @@ padding: 2px;
 .footer-top{
 background-color: #008000;
 color: white;
-height: 350px;
+/* height: 350px; */
+min-height: 350px;
 align-items: center;
 display: flex;
 

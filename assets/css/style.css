@@ -265,6 +265,18 @@ a:hover {
 
 
 /* services CSS ends here */
+/* privacy policy section starts here */
+.privacy-container ul li{
+    list-style-type: disc;
+
+}
+/* disclaimer section starts here */
+.disclaimer-container ul li{
+    list-style-type: disc;
+
+}
+
+
 
 /* footer */
 .footer-icon {

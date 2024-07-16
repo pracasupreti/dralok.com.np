@@ -29,6 +29,8 @@ nav ul li {
 .nav-link{
     margin: auto;
 }
+/* navbar css end here */
+
 
 a:hover {
     color: #4b4b4b;
@@ -53,10 +55,6 @@ a:hover {
 
 }
 
-nav a {
-    color: #008000;
-    text-decoration: none;
-}
 
 .testimonial-card-1 img {
     width: 200px;
@@ -78,7 +76,22 @@ nav a {
 
     }
 }
-
+@media(min-width:768px){
+    .carousel-caption .caption-one{
+        font-size: 30px!important;
+    }
+    .carousel-caption .caption-two{
+        font-size: 50px!important;
+    }
+}
+@media(max-width:768px){
+    .carousel-caption .caption-one{
+        font-size: 20px!important;
+    }
+    .carousel-caption .caption-two{
+        font-size: 30px!important;
+    }
+}
 
 
 /* team member section end */

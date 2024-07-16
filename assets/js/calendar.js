@@ -1,4 +1,4 @@
-// 
+
 
 const currentDate = new Date();
 let currentMonth = currentDate.getMonth();
@@ -115,3 +115,5 @@ window.addEventListener('click', (event) => {
 
     
 });
+
+document.getElementById("current-year").textContent = currentYear;

@@ -213,10 +213,11 @@ a:hover {
    
     text-align: center;
     right: 45%;
-    bottom: 2px;
+    /* bottom: 2px; */
     color: white;
     align-items: center;
     padding: 2px;
+    
 }
 
 /* latest update homepage */

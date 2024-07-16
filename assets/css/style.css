@@ -194,14 +194,31 @@ padding: 2px;
 
 
 
+/* services CSS starts here */
+.service-image{
+    height: 11rem;
+    width: 19rem;
+}
+.card-services {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  .card-services:hover {
+
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+  }
+  /* .card-icon {
+    font-size: 2em;
+    color: green;
+  }
+  .card-body{
+      padding: 3rem;
+      border-radius: 0.75rem;
+  } */
 
 
-
-
-
-
-
-
+/* services CSS ends here */
  
 /* footer */
 .footer-icon{

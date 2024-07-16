@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar | Dr. Alok Goit</title>
+
+     <!-- Bootstrap cdn -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     <!-- Fontawesome cdn -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet" />
+      <!-- custom css -->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/calendar.css">
+  
+</head>
+
+<body>
+    <!-- Header section starts here -->
+    <section class="w-100 border-bottom navbar-position">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light  d-flex justify-content-between align-items-center">
+        <a href="index.htm" class="navbar-brand d-flex align-items-center my-3">
+          <img src="assets/images/about/1.png" alt="logo" class="img-fluid d-inline-block align-center rounded-circle text-muted mr-2" style="width: 60px; height: 60px;"> Dr. Alok Goit | <span style="font-size: 12px;">15539</span> </a>
+  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.htm">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.htm">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.htm">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.htm">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.htm">Contact</a></li>
+            <li class="nav-item btn btn-success btn-sm p-1"><a class="nav-link text-white" href="booking.htm">Book an
+                Appointment</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+   <!-- Header section starts here -->
+    <!-- Breadcrumb section starts here -->
+    <section class="container-fluid breadcrumb-custom">
+        <div class="container text-dark" style="background-color: #008000;">
+            <ol class="breadcrumb my-2" style="background-color: #008000; color: black;">
+                <li class=""><a
+                        class="text-white h3 mr-2" href="#">Home </a></li>
+                <li class="active h3"><i class="fas  " aria-hidden="true" style="font-size: 2rem;" >/</i> Calendar</li>
+            </ol>
+        </div>
+
+    </section>
+    <!-- Breadcrumb section ends here -->
+
+    <!-- Main calendar section starts here -->
+ 
+    <section class="container my-3">
+        <div class="calendar">
+            <div class="header">
+              <button id="prevBtn">&lt;</button>
+              <h1 id="monthYear"></h1>
+              <button id="nextBtn">&gt;</button>
+            </div>
+            <div class="days">
+              <div class="day">Sun</div>
+              <div class="day">Mon</div>
+              <div class="day">Tue</div>
+              <div class="day">Wed</div>
+              <div class="day">Thu</div>
+              <div class="day">Fri</div>
+              <div class="day">Sat</div>
+            </div>
+            <div class="dates " id="dates">
+                <div class="date" data-day="1">1</div>
+                <div class="date" data-day="2">2</div>
+               <div class="date" data-day="3">3</div>
+                <div class="date" data-day="4">4</div>
+               <div class="date" data-day="5">5</div>
+                <div class="date" data-day="6">6</div>
+                </div>
+          </div>
+        
+    </section>
+      <!-- Modal for Event Details -->
+      <div class="modal event show-modal hidden" id="eventModal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="eventDate"></h2>
+          <textarea class="area" id="eventDescription"></textarea>
+          <button id="saveEventBtn">Save</button>
+        </div>
+      </div>
+    <!-- Main calendar section ends here -->
+
+<!-- =====Global footer starts here -->
+<section>
+    <div class="container-fluid border-top footer-top " >
+     <div class="container footer  ">
+         <div class="row   p-3">
+     
+             <!-- <div class="col-md-12 col-lg-5">
+                 <h5 class="font-italic text-white my-2">About</h5>
+                 <div class=" col-md-3 " ><img src="assets/images/footer/footer.png" alt="" width="100px" height="100px" >
+                     </div>
+                   
+                         <p class="w-75 col-md-12 float-right">We Help Your Skin Get Healthy.  Our expert knowledge helps you enjoy healthy and beautiful skin.</p>
+                 
+             </div> -->
+             <div class="col-md-12 col-lg-5">
+                <h5 class="font-italic text-white my-2">About</h5>
+                <div class="row">
+                    
+                    <div class="col-md-12 mx-auto" >
+                        <div class="col-md-3 float-left">
+                            <img src="assets/images/footer/footer-logo.png" alt="" width="80px" height="80px">
+                        </div>
+                        <!-- <p class="w-100">
+                            We Help Your Skin Get Healthy. Our expert knowledge helps you enjoy healthy and beautiful skin.
+                        </p> -->
+                        <p class=" text-justify" style="width:80%;" >
+                            Transform your skin with expert guidance for a healthy, radiant complexion. From personalized skincare routines to effective solutions for acne and anti-aging, we're here to help you achieve beautiful results.
+                        </p>
+                      
+                    </div>
+                </div>
+            </div>
+            
+
+           
+             <div class=" col-md-6 col-sm-6 col-lg-3 flex flex-wrap  flex-column mb-4 text-white">
+                <h5 class="text-white my-2">Useful Links</h5>
+                <div class="d-flex justify-content-between flex-column">
+                    <a href="gallery.htm" class="mb-2" ><img src="assets/images/footer/gallery.png" alt="" class="img-fluid footer-icon text-white">Gallery</a>
+                <a href="services.htm" class="mb-2"><img src="assets/images/footer/services.png" alt="" class="img-fluid footer-icon">Services</a>
+                <a href="feedback.htm" class="mb-2"><img src="assets/images/footer/feedback.png" alt="" class="img-fluid footer-icon">Feedback</a>
+                <a href="calendar.htm" class="mb-2"><img src="assets/images/footer/calendar.png" alt="" class="img-fluid footer-icon">Calendar</a>
+                </div>
+               
+            </div>
+            <div class=" col-md-6 col-sm-6 col-lg-3 flex flex-wrap  flex-column mb-4 text-white">
+                <h5 class="text-white my-2">Browse More</h5>
+                <div class="d-flex flex-wrap justify-content-between  flex-column ">
+                    <a href="privacy.htm" class="my-2">Privacy Policy</a>
+                    <a href="disclaimer.htm" class="my-2">Disclaimer</a>
+                  <a href="terms.htm" class="my-2">Terms and Condition</a>
+                    
+                </div>
+               
+            </div>
+     
+         </div>
+     
+     </div>
+    </div>
+   
+   
+ 
+    <div class="container-fluid bg-light">
+     <div class="container   d-flex flex-wrap justify-content-between align-items-center ">
+         <div class="text-muted-foregroundsm-text-center">Copyright © 2024 Dr. Alok Goit. All Rights Reserved</div>
+         <div class="flex align-items-center"> 
+            <a href="https://twitter.com/pracasinfosys" target="_blank" style="padding-left: 5px; padding-right: 5px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4b4b4b" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"></path>
+            </svg></a>
+          <!-- fa -->
+            <a href="https://facebook.com/pracasinfosys" target="_blank" style="padding-left: 5px; padding-right: 5px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4b4b4b" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+            </svg></a>
+           
+            <a href="https://youtube.com/pracasinfosys" target="_blank" style="padding-left: 5px; padding-right: 5px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4b4b4b" class="bi bi-youtube" viewBox="0 0 16 16">
+            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"></path>
+            </svg></a>
+          
+            <a href="https://www.linkedin.com/company/pracas/" target="_blank" style="padding-left: 5px; padding-right: 5px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4b4b4b" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path>
+            </svg></a>
+           
+       
+      </div>
+         <div style="font-size: 15px;" >Technology Partner: <a href="https://www.pracas.net" target="_blank"><img src="assets/images/footer/footer.png" alt="" class="img-fluid " height="100px" width="100px" style="margin-bottom: 2.5rem!important;"></a></div>
+       </div>
+    </div>
+   
+   </section>
+ 
+   <!-- WhatsApp float section starts here -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <a href="https://wa.me/9779852024365?text=Hi%2C%20I%27m%20contacting%20you%20through%20www.alokgoit.com.np%20"
+       class="float" target="_blank">
+       <i class="ff fa-whatsapp my-float"></i>
+   </a>
+   <!-- WhatsApp float section end here -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://demos.creative-tim.com/fullcalendar/assets/js/fullcalendar.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+ <script src="assets/js/calendar.js"></script>
+ 
+ </body>
+ </html>

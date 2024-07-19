@@ -49,7 +49,7 @@
     // maxWidth: 800,
     // maxHeight: 600,
     // positionFromTop: 50,
-    positionFromTop: 170,
+    positionFromTop: 100,
     resizeDuration: 700,
     showImageNumberLabel: true,
     wrapAround: false,

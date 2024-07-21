@@ -30,8 +30,3 @@ Disclaimer              /disclaimer
 
 4. Book an Appointment -> booking.htm
 
-# Footer
-1. 
-2. Gallery
-3. Testimonial
-4. 

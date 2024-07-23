@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+
+    <!-- animation  -->
+    <script src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
+
 </head>
 <body>
   
     <!-- Header start  -->
      
-
-<nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200 md:px-5 lg:px-24 md:py-4 ">
+<section>
+<nav class="bg-white sticky w-full z-20 top-0 start-0 border-b border-gray-200 md:px-5 lg:px-24 md:py-4 ">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="index.htm" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="assets/images/header/1.png" class="h-[60px]" alt="Flowbite Logo">
@@ -21,36 +29,348 @@
             </span>
     </a>
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <button type="button" class="text-white bg-[#bd9f6e] hover:bg-[#775c30] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm px-4 py-[15px] text-center">Book an Appointment</button>
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+        <button type="button" class="booking text-white bg-[#bd9f6e] hover:bg-[#775c30] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm px-4 py-[15px] text-center">Book an Appointment</button>
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hamburger hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
           </svg>
       </button>
     </div>
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+    <div class="items-center justify-between headermenu w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 lg:space-x-12 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
         <li>
-          <a href="index.htm" class="block py-2 px-3 text-white bg-[#bd9f6e] rounded md:bg-transparent md:text-[#bd9f6e] md:p-0 " aria-current="page">Home</a>
+          <a href="index.htm" class="block py-2 px-3 font-normal text-white bg-[#bd9f6e] rounded md:bg-transparent md:text-[#bd9f6e] md:p-0 " aria-current="page">Home</a>
         </li>
         <li>
-          <a href="about.htm" class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#bd9f6e] md:p-0 ">About</a>
+          <a href="about.htm" class="block py-2 px-3 font-normal text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#bd9f6e] md:p-0 ">About</a>
         </li>
         <li>
-          <a href="services.htm" class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#bd9f6e] md:p-0">Services</a>
+          <a href="services.htm" class="block py-2 px-3 font-normal text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#bd9f6e] md:p-0">Services</a>
         </li>
         <li>
-          <a href="gallery.htm" class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#bd9f6e] md:p-0">Gallery</a>
+          <a href="gallery.htm" class="block py-2 px-3 font-normal text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#bd9f6e] md:p-0">Gallery</a>
         </li>
         <li>
-          <a href="contact.htm" class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#bd9f6e] md:p-0">Contact</a>
+          <a href="contact.htm" class="block py-2 px-3 font-normal text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#bd9f6e] md:p-0">Contact</a>
         </li>
       </ul>
     </div>
     </div>
   </nav>
+</section>
+  <style>
+    @media (min-width: 992px) {
+    .hamburger{
+        display: none;
+    }
+}
+    @media (max-width: 992px) {
+    .headermenu{
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .booking{
+        display: none;
+    }
+}
+  </style>
+   <!-- Header end  -->
+
+
+   <!-- slider start  -->
+    
+<section>
+<div id="default-carousel" class="relative w-full" data-carousel="">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden md:h-[550px]">
+         <!-- Item 1 -->
+         <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="absolute bottom-16 right-[40%] transform -translate-x-1/2 p-4 bg-transparent bg-opacity-75 space-y-2 z-10">
+                <h2 class="text-4xl text-white font-[Quicksand] font-boldx">The Best </h2>
+                <p class="text-4xl text-white font-[Quicksand]">Dermatologist in Biratnagar</p>
+                <p class="text-white font-[Quicksand]">Dr. Goit checking Indian Patient</p>
+            </div>
+            <img src="assets/images/home/slider/1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="absolute bottom-16 right-[40%] transform -translate-x-1/2 p-4 bg-transparent bg-opacity-75 space-y-2 z-10">
+                <h2 class="text-4xl text-white font-[Quicksand] font-boldx">The Best </h2>
+                <p class="text-4xl text-white font-[Quicksand]">Dermatologist in Biratnagar</p>
+                <p class="text-white font-[Quicksand]">Dr. Goit checking Indian Patient</p>
+            </div>
+            <img src="assets/images/home/slider/2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="absolute bottom-16 right-[40%] transform -translate-x-1/2 p-4 bg-transparent bg-opacity-75 space-y-2 z-10">
+                <h2 class="text-4xl text-white font-[Quicksand] font-boldx">The Best </h2>
+                <p class="text-4xl text-white font-[Quicksand]">Dermatologist in Biratnagar</p>
+                <p class="text-white font-[Quicksand]">Dr. Goit checking Indian Patient</p>
+            </div>
+            <img src="assets/images/home/slider/3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+       
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+            <svg class="w-4 h-4 text-white  rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+            <svg class="w-4 h-4 text-white  rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+</section>
+
+   <!-- slider end  -->
+
+   <!-- testimonials start  -->
+   <section class="bg-gray-100 py-10">
+    <div class="container mx-auto">
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full md:w-1/3 px-4 mb-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg h-full">
+            <img src="assets/images/home/testimonials/1.png" alt="Testimonials1" class="my-5 rounded-full mx-auto w-52 h-52 object-cover">
+            <p class="mb-3 text-center mx-auto" style="width: 75%;">"It's basically a third of the price compared to an agency."</p>
+            <h5 class="text-[#bd9f6e] text-center text-xl">Diwas Poudel</h5>
+            <p class="text-center">Dhankuta, Nepal</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 px-4 mb-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg h-full">
+            <img src="assets/images/home/testimonials/2.png" alt="Testimonials1" class="my-5 rounded-full mx-auto w-52 h-52 object-cover">
+            <p class="mb-3 text-center mx-auto" style="width: 75%;">"Very easy, very straightforward, and at a very fair price."</p>
+            <h5 class="text-[#bd9f6e] text-center text-xl">Alisha Ghimire</h5>
+            <p class="text-center">Biratnagar, Nepal</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 px-4 mb-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg h-full">
+            <img src="assets/images/home/testimonials/3.png" alt="Testimonials1" class="my-5 rounded-full mx-auto w-52 h-52 object-cover">
+            <p class="mb-3 text-center mx-auto" style="width: 75%;">"Very easy, very straightforward, and at a very fair price."</p>
+            <h5 class="text-[#bd9f6e] text-center text-xl">Naman Kunwar</h5>
+            <p class="text-center">Damak, Jhapa
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   
-    <!-- Header end  -->
+   <!-- testimonials end  -->
+
+   <!-- Promotional section  -->
+   <section class="container mx-auto my-4 p-3">
+    <div class="card bg-white rounded-3xl p-6 shadow-lg">
+      <div class="flex flex-wrap -mx-3">
+        <div class="w-full md:w-1/2 px-3">
+          <img src="assets/images/home/4.png" alt="" class="w-full h-auto">
+        </div>
+        <div class="w-full md:w-1/2 px-3 flex items-center justify-center">
+          <div class="text-center">
+            <h2 class="text-4xl font-semibold mb-2">Is your skin itching?</h2>
+            <h4 class="text-xl font-semibold mb-4">Get a free Counselling from our Doctors.</h4>
+            <a href="contact.htm" class="btn bg-white text-green-600 border border-green-600 mt-4 w-1/2 py-2 text-center inline-block">Free Counselling &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+   <!-- Promotional section end-->
+
+   <!-- latest update section -->
+   <section class="py-8">
+    <div class="container mx-auto">
+        <div class="text-center my-5 text-3xl font-semibold">Latest Updates</div>
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-6">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/home/updates/1.png" alt="" class="w-full h-auto">
+                    <div class="p-4">
+                        <div class="flex items-center text-sm text-gray-600">
+                            <img src="assets/images/home/icon/1.png" alt="calendar icon" class="w-6 h-6 mr-1"> 23 June, 2024
+                            <span class="ml-3 flex items-center">
+                                <img src="assets/images/home/icon/2.png" alt="clock icon" class="w-6 h-6 mr-1"> 2 min Read
+                            </span>
+                        </div>
+                        <h5 class="text-lg text-[#bd9f6e] font-semibold my-3">Acne Treatments and Prevention</h5>
+                        <p class="text-gray-700 line-clamp-3">Acne is one of the most common skin conditions that affects millions of people worldwide, regardless of age or gender. From teenagers navigating puberty to adults dealing with hormonal changes, acne can be persistent and frustr...</p>
+                        <a href="https://www.biratinfo.com/health/understanding-acne-causes-treatments-and-prevention/" target="_blank" class="inline-block bg-[#bd9f6e] text-white py-2 px-4 rounded mt-3">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-6">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/home/updates/2.png" alt="" class="w-full h-auto">
+                    <div class="p-4">
+                        <div class="flex items-center text-sm text-gray-600">
+                            <img src="assets/images/home/icon/1.png" alt="calendar icon" class="w-6 h-6 mr-1"> 23 June, 2024
+                            <span class="ml-3 flex items-center">
+                                <img src="assets/images/home/icon/2.png" alt="clock icon" class="w-6 h-6 mr-1"> 2 min Read
+                            </span>
+                        </div>
+                        <h5 class="text-lg text-[#bd9f6e] font-semibold my-3">Right Skincare Treatment</h5>
+                        <p class="text-gray-700 line-clamp-3">HydraFacials and chemical peels are popular skincare treatments offered by Beverly Hills dermatologists that help improve the overall health and appearance of the skin. While they achieve similar goals, there are some key distinctions regarding treatment mechanisms and skin concerns addressed.</p>
+                        <a href="#" target="_blank" class="inline-block bg-[#bd9f6e] text-white py-2 px-4 rounded mt-3">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/home/updates/3.png" alt="" class="w-full h-auto">
+                    <div class="p-4">
+                        <div class="flex items-center text-sm text-gray-600">
+                            <img src="assets/images/home/icon/1.png" alt="calendar icon" class="w-6 h-6 mr-1"> 23 June, 2024
+                            <span class="ml-3 flex items-center">
+                                <img src="assets/images/home/icon/2.png" alt="clock icon" class="w-6 h-6 mr-1"> 2 min Read
+                            </span>
+                        </div>
+                        <h5 class="text-lg text-[#bd9f6e] font-semibold my-3">Why to Visit Dermatologists?</h5>
+                        <p class="text-gray-700 line-clamp-3">Dermatologists in Beverly Hills are skin experts, essentially the MVPs of skincare. They know everything there is to know about keeping your skin in tip-top condition. Whether you’re dealing with acne or eczema...</p>
+                        <a href="#" target="_blank" class="inline-block bg-[#bd9f6e] text-white py-2 px-4 rounded mt-3">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/home/updates/4.png" alt="" class="w-full h-auto">
+                    <div class="p-4">
+                        <div class="flex items-center text-sm text-gray-600">
+                            <img src="assets/images/home/icon/1.png" alt="calendar icon" class="w-6 h-6 mr-1"> 23 June, 2024
+                            <span class="ml-3 flex items-center">
+                                <img src="assets/images/home/icon/2.png" alt="clock icon" class="w-6 h-6 mr-1"> 2 min Read
+                            </span>
+                        </div>
+                        <h5 class="text-lg text-[#bd9f6e] font-semibold my-3">How to Treat Skin Cancer?</h5>
+                        <p class="text-gray-700 line-clamp-3">Did you know that skin cancer is one of the most common types of cancer worldwide? Every day, more and more people are diagnosed with it. Dermatologists ...</p>
+                        <a href="#" target="_blank" class="inline-block bg-[#bd9f6e] text-white py-2 px-4 rounded mt-3">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/home/updates/5.png" alt="" class="w-full h-auto">
+                    <div class="p-4">
+                        <div class="flex items-center text-sm text-gray-600">
+                            <img src="assets/images/home/icon/1.png" alt="calendar icon" class="w-6 h-6 mr-1"> 23 June, 2024
+                            <span class="ml-3 flex items-center">
+                                <img src="assets/images/home/icon/2.png" alt="clock icon" class="w-6 h-6 mr-1"> 2 min Read
+                            </span>
+                        </div>
+                        <h5 class="text-lg text-[#bd9f6e] font-semibold my-3">6 Winter Skin Care</h5>
+                        <p class="text-gray-700 line-clamp-3">The beginning of the year also means the beginning of winter. This season can be particularly harsh in many areas weather, finances due...</p>
+                        <a href="#" target="_blank" class="inline-block bg-[#bd9f6e] text-white py-2 px-4 rounded mt-3">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer section start -->
+<section>
+    <div class="container mx-auto border-t">
+      <div class="container py-8">
+        <div class="flex flex-wrap p-3 space-x-24">
+          <!-- About Section -->
+          <div class="w-full lg:w-2/5">
+            <h5 class="italic text-white my-2 mx-3">About</h5>
+            <div class="flex">
+              <div class="w-28">
+                <img src="assets/images/footer/footer-logo.png" alt="" class="w-20 h-20">
+              </div>
+              <p class="text-justify text-[#bd9f6e] w-3/4">
+                Transform your skin with expert guidance for a healthy, radiant complexion. From personalized skincare routines to effective solutions for acne and anti-aging, we're here to help you achieve beautiful results.
+              </p>
+            </div>
+          </div>
+  
+          <!-- Useful Links -->
+          <div class="w-full lg:w-1/5 text-[#bd9f6e] mb-4">
+            <h5 class="text-[#bd9f6e] text-2xl my-2">Useful Links</h5>
+            <div class="flex flex-col">
+              <a href="gallery.htm" class="mb-2 flex items-center"><img src="assets/images/footer/gallery.png" alt="Gallery Icon" class="w-5 h-5 mr-2">Gallery</a>
+              <a href="services.htm" class="mb-2 flex items-center"><img src="assets/images/footer/services.png" alt="Services Icon" class="w-5 h-5 mr-2">Services</a>
+              <a href="feedback.htm" class="mb-2 flex items-center"><img src="assets/images/footer/feedback.png" alt="Feedback Icon" class="w-5 h-5 mr-2">Feedback</a>
+              <a href="calendar.htm" class="mb-2 flex items-center"><img src="assets/images/footer/calendar.png" alt="Calendar Icon" class="w-5 h-5 mr-2">Calendar</a>
+            </div>
+          </div>
+  
+          <!-- Browse More -->
+          <div class="w-full lg:w-1/5 text-[#bd9f6e] mb-4">
+            <h5 class="text-[#bd9f6e] text-2xl my-2">Browse More</h5>
+            <div class="flex flex-col">
+              <a href="privacy.htm" class="my-2">Privacy Policy</a>
+              <a href="disclaimer.htm" class="my-2">Disclaimer</a>
+              <a href="terms.htm" class="my-2">Terms and Condition</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="bg-gray-200 px-12">
+      <div class="container mx-auto flex flex-wrap justify-between items-center py-4">
+        <div class="text-muted text-[#bd9f6e]">Copyright © <span id="current-year"></span> Dr. Alok Goit. All Rights Reserved</div>
+        <div class="flex items-center space-x-3">
+          <!-- Twitter -->
+          <a href="https://twitter.com/pracasinfosys" target="_blank" class="p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#bd9f6e" class="bi bi-twitter-x" viewBox="0 0 16 16">
+              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"></path>
+            </svg>
+          </a>
+          <!-- Facebook -->
+          <a href="https://facebook.com/pracasinfosys" target="_blank" class="p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#bd9f6e" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://youtube.com/pracasinfosys" target="_blank" class="p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#bd9f6e" class="bi bi-youtube" viewBox="0 0 16 16">
+              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"></path>
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/company/pracas/" target="_blank" class="p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#bd9f6e" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="flex text-sm space-x-3">
+          <p class="pt-3 text-[#bd9f6e]">Technology Partner:</p> 
+          <a href="https://www.pracas.net" target="_blank">
+            <img src="assets/images/footer/footer.png" alt="PRACAS" class="h-12 w-10">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Footer section end -->
+
+
 </body>
 </html>

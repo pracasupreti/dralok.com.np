@@ -553,3 +553,21 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+
+@media (min-width: 992px) {
+  .hamburger{
+    display: none!important;
+  }
+}
+
+@media (max-width: 992px) {
+  .headermenu{
+    display: none!important;
+  }
+}
+
+@media (max-width: 500px) {
+  .booking{
+    display: none!important;
+  }
+}

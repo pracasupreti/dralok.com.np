@@ -60,21 +60,7 @@
   </nav>
 </section>
   <style>
-    @media (min-width: 992px) {
-    .hamburger{
-        display: none;
-    }
-}
-    @media (max-width: 992px) {
-    .headermenu{
-        display: none;
-    }
-}
-@media (max-width: 500px) {
-    .booking{
-        display: none;
-    }
-}
+  
   </style>
    <!-- Header end  -->
 
@@ -82,11 +68,11 @@
    <!-- slider start  -->
     
 <section>
-<div id="default-carousel" class="relative w-full" data-carousel="">
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden md:h-[550px]">
          <!-- Item 1 -->
-         <div class="hidden duration-700 ease-in-out" data-carousel-item>
+         <div class="hidden duration-1700 ease-in-out" data-carousel-item>
             <div class="absolute bottom-16 right-[40%] transform -translate-x-1/2 p-4 bg-transparent bg-opacity-75 space-y-2 z-10">
                 <h2 class="text-4xl text-white font-[Quicksand] font-boldx">The Best </h2>
                 <p class="text-4xl text-white font-[Quicksand]">Dermatologist in Biratnagar</p>
@@ -96,7 +82,7 @@
         </div>
         
         <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class="hidden duration-1700 ease-in-out" data-carousel-item>
             <div class="absolute bottom-16 right-[40%] transform -translate-x-1/2 p-4 bg-transparent bg-opacity-75 space-y-2 z-10">
                 <h2 class="text-4xl text-white font-[Quicksand] font-boldx">The Best </h2>
                 <p class="text-4xl text-white font-[Quicksand]">Dermatologist in Biratnagar</p>
@@ -105,7 +91,7 @@
             <img src="assets/images/home/slider/2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class="hidden duration-1700 ease-in-out" data-carousel-item>
             <div class="absolute bottom-16 right-[40%] transform -translate-x-1/2 p-4 bg-transparent bg-opacity-75 space-y-2 z-10">
                 <h2 class="text-4xl text-white font-[Quicksand] font-boldx">The Best </h2>
                 <p class="text-4xl text-white font-[Quicksand]">Dermatologist in Biratnagar</p>
@@ -290,47 +276,49 @@
 
 <!-- Footer section start -->
 <section>
+    <div class="bg-[#f5f1ea]">
     <div class="container mx-auto border-t">
       <div class="container py-8">
         <div class="flex flex-wrap p-3 space-x-24">
           <!-- About Section -->
           <div class="w-full lg:w-2/5">
-            <h5 class="italic text-white my-2 mx-3">About</h5>
+            <h5 class="italic text-[#bd9f6e] text-lg my-2 mx-3">About</h5>
             <div class="flex">
               <div class="w-28">
                 <img src="assets/images/footer/footer-logo.png" alt="" class="w-20 h-20">
               </div>
-              <p class="text-justify text-[#bd9f6e] w-3/4">
+              <p class=" text-gray-600 w-3/4">
                 Transform your skin with expert guidance for a healthy, radiant complexion. From personalized skincare routines to effective solutions for acne and anti-aging, we're here to help you achieve beautiful results.
               </p>
             </div>
           </div>
   
           <!-- Useful Links -->
-          <div class="w-full lg:w-1/5 text-[#bd9f6e] mb-4">
+          <div class="w-full lg:w-1/5 text-gray-600 mb-4">
             <h5 class="text-[#bd9f6e] text-2xl my-2">Useful Links</h5>
             <div class="flex flex-col">
-              <a href="gallery.htm" class="mb-2 flex items-center"><img src="assets/images/footer/gallery.png" alt="Gallery Icon" class="w-5 h-5 mr-2">Gallery</a>
-              <a href="services.htm" class="mb-2 flex items-center"><img src="assets/images/footer/services.png" alt="Services Icon" class="w-5 h-5 mr-2">Services</a>
-              <a href="feedback.htm" class="mb-2 flex items-center"><img src="assets/images/footer/feedback.png" alt="Feedback Icon" class="w-5 h-5 mr-2">Feedback</a>
-              <a href="calendar.htm" class="mb-2 flex items-center"><img src="assets/images/footer/calendar.png" alt="Calendar Icon" class="w-5 h-5 mr-2">Calendar</a>
+              <a href="gallery.htm" class="mb-2 flex items-center hover:text-[#bd9f6e]"><img src="assets/images/footer/gallery.png" alt="Gallery Icon" class="w-5 h-5 mr-2">Gallery</a>
+              <a href="services.htm" class="mb-2 flex items-center hover:text-[#bd9f6e]"><img src="assets/images/footer/services.png" alt="Services Icon" class="w-5 h-5 mr-2">Services</a>
+              <a href="feedback.htm" class="mb-2 flex items-center hover:text-[#bd9f6e]"><img src="assets/images/footer/feedback.png" alt="Feedback Icon" class="w-5 h-5 mr-2">Feedback</a>
+              <a href="calendar.htm" class="mb-2 flex items-center hover:text-[#bd9f6e]"><img src="assets/images/footer/calendar.png" alt="Calendar Icon" class="w-5 h-5 mr-2">Calendar</a>
             </div>
           </div>
   
           <!-- Browse More -->
-          <div class="w-full lg:w-1/5 text-[#bd9f6e] mb-4">
+          <div class="w-full lg:w-1/5 text-gray-600 mb-4">
             <h5 class="text-[#bd9f6e] text-2xl my-2">Browse More</h5>
             <div class="flex flex-col">
-              <a href="privacy.htm" class="my-2">Privacy Policy</a>
-              <a href="disclaimer.htm" class="my-2">Disclaimer</a>
-              <a href="terms.htm" class="my-2">Terms and Condition</a>
+              <a href="privacy.htm" class="py-2  hover:text-[#bd9f6e]">Privacy Policy</a>
+              <a href="disclaimer.htm" class="py-2  hover:text-[#bd9f6e]">Disclaimer</a>
+              <a href="terms.htm" class="py-2  hover:text-[#bd9f6e]">Terms and Condition</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </div>
   
-    <div class="bg-gray-200 px-12">
+    <div class="bg-[#ece0ca] px-12">
       <div class="container mx-auto flex flex-wrap justify-between items-center py-4">
         <div class="text-muted text-[#bd9f6e]">Copyright © <span id="current-year"></span> Dr. Alok Goit. All Rights Reserved</div>
         <div class="flex items-center space-x-3">
@@ -371,6 +359,7 @@
   
 <!-- Footer section end -->
 
-
+<!-- costom JS  -->
+<script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -13,8 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 
     <!-- animation  -->
-    <script src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 <body>
@@ -135,6 +135,7 @@
     <div class="container mx-auto">
       <div class="flex flex-wrap -mx-4">
         <div class="w-full md:w-1/3 px-4 mb-8">
+          <div data-aos="zoom-in-right" data-aos-duration="1500">
           <div class="bg-white p-6 rounded-lg shadow-lg h-full">
             <img src="assets/images/home/testimonials/1.png" alt="Testimonials1" class="my-5 rounded-full mx-auto w-52 h-52 object-cover">
             <p class="mb-3 text-center mx-auto" style="width: 75%;">"It's basically a third of the price compared to an agency."</p>
@@ -142,15 +143,19 @@
             <p class="text-center">Dhankuta, Nepal</p>
           </div>
         </div>
+        </div>
         <div class="w-full md:w-1/3 px-4 mb-8">
+          <div data-aos="fade-up" data-aos-duration="1500">
           <div class="bg-white p-6 rounded-lg shadow-lg h-full">
             <img src="assets/images/home/testimonials/2.png" alt="Testimonials1" class="my-5 rounded-full mx-auto w-52 h-52 object-cover">
             <p class="mb-3 text-center mx-auto" style="width: 75%;">"Very easy, very straightforward, and at a very fair price."</p>
             <h5 class="text-[#bd9f6e] text-center text-xl">Alisha Ghimire</h5>
             <p class="text-center">Biratnagar, Nepal</p>
           </div>
+          </div>
         </div>
         <div class="w-full md:w-1/3 px-4 mb-8">
+          <div data-aos="zoom-in-left" data-aos-duration="1500">
           <div class="bg-white p-6 rounded-lg shadow-lg h-full">
             <img src="assets/images/home/testimonials/3.png" alt="Testimonials1" class="my-5 rounded-full mx-auto w-52 h-52 object-cover">
             <p class="mb-3 text-center mx-auto" style="width: 75%;">"Very easy, very straightforward, and at a very fair price."</p>
@@ -158,6 +163,7 @@
             <p class="text-center">Damak, Jhapa
 
             </p>
+          </div>
           </div>
         </div>
       </div>
@@ -171,13 +177,15 @@
     <div class="card bg-white rounded-3xl p-6 shadow-lg">
       <div class="flex flex-wrap -mx-3">
         <div class="w-full md:w-1/2 px-3">
+          <div data-aos="flip-left" data-aos-duration="1500">
           <img src="assets/images/home/4.png" alt="" class="w-full h-auto">
+          </div>
         </div>
         <div class="w-full md:w-1/2 px-3 flex items-center justify-center">
           <div class="text-center">
             <h2 class="text-4xl font-semibold mb-2">Is your skin itching?</h2>
             <h4 class="text-xl font-semibold mb-4">Get a free Counselling from our Doctors.</h4>
-            <a href="contact.htm" class="btn bg-white text-green-600 border border-green-600 mt-4 w-1/2 py-2 text-center inline-block">Free Counselling &rarr;</a>
+            <a href="contact.htm" class="btn bg-white text-[#bd9f6e] border border-[#bd9f6e] mt-4 w-1/2 py-2 text-center inline-block">Free Counselling &rarr;</a>
           </div>
         </div>
       </div>
@@ -362,5 +370,10 @@
 
 <!-- costom JS  -->
 <script src="assets/js/script.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>

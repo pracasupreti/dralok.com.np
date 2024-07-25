@@ -31,8 +31,27 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet" />
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- for roadblock -->
+     <link rel="stylesheet" href="https://sriyog.com/roadblock/roadblock.css">
+     <script src="https://sriyog.com/roadblock/roadblock.js"></script>
 </head>
 <body>
+   <!-- roadblock -->
+   <div id="roadblock-wrap" class=" d-flex align-items-center justify-content-center roadblock " style="background-color: rgba(209, 213, 219, 1);">
+    <div >
+        
+         
+        <div class="position-relative shadow p-4 bg-white " style="border-radius: 2%;">
+            <p class="btn btn-danger rounded-circle roadblock_skip " onclick="skipAd(event)">X</p>
+            <a href="#" target="_blank" id="advertisementLink">
+                <img src="https://www.sriyog.com/roadblock/default.jpg" class="img-fluid rounded" style="border-radius: 3%; object-fit: contain!important; height: 500px!important; width: 500px!important;" alt="Advertisement">
+            </a>
+        </div>
+       
+    </div>
+</div>
+<!-- roadblock ends here-->
+
   <section class="w-100 border-bottom navbar-position">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light  d-flex justify-content-between align-items-center">

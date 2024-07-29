@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Dr. Alok Goit</title>
+    <title>Disclaimer | Dr. Alok Goit</title>
 
      <!-- Favicon section starts here -->
      <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -29,9 +29,6 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- lightbox -->
-    <link href="src/css/lightbox.css" rel="stylesheet" />
-    <link href="src/css/lightbox.min.css" rel="stylesheet" />
 
     <!-- animation  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -51,7 +48,7 @@
             </span>
     </a>
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <a href="booking.htm"><button type="button" class="booking text-white bg-[#bd9f6e] hover:bg-[#775c30] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm px-4 py-[15px] text-center">Book an Appointment</button></a>
+        <button type="button" class="booking text-white bg-[#bd9f6e] hover:bg-[#775c30] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm px-4 py-[15px] text-center">Book an Appointment</button>
         <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hamburger hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -73,11 +70,11 @@
           <a href="services.htm" class="block py-2 px-3 font-normal text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#bd9f6e] md:p-0">Services</a>
         </li>
         <li>
-            <a href="gallery.htm" class="block py-2 px-3 font-normal text-white bg-[#bd9f6e] rounded md:bg-transparent md:text-[#bd9f6e] md:p-0 " aria-current="page">Gallery</a>
+            <a href="gallery.htm" class="block py-2 px-3 font-normal text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#bd9f6e] md:p-0">Gallery</a>
           </li>
         <li>
-          <a href="contact.htm" class="block py-2 px-3 font-normal text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#bd9f6e] md:p-0">Contact</a>
-        </li>
+            <a href="contact.htm" class="block py-2 px-3 font-normal text-white bg-[#bd9f6e] rounded md:bg-transparent md:text-[#bd9f6e] md:p-0 " aria-current="page">Contact</a>
+          </li>
       </ul>
     </div>
     </div>
@@ -90,150 +87,223 @@
 
 
    <!-- breadcrumb start  -->
-   <section class=" bg-[#bd9f6e] md:px-5 lg:px-24 ">
-    
-    <ol class="breadcrumb flex py-12 px-6 bg-[#bd9f6e]">
-      <li>
-        <a class="text-white text-3xl mr-2" href="index.htm">Home</a>
-      </li>
-      <li class="flex items-center text-3xl">
-        <i class="fas fa-chevron-right text-xl" aria-hidden="true"></i>
-        <span class="ml-2">/ Gallery</span>
-      </li>
-    </ol>
-  
-</section>
+   <section class="container-fluid bg-[#bd9f6e]">
+    <div class="container mx-auto">
+      <ol class="breadcrumb flex py-12 px-6 bg-[#bd9f6e]">
+        <li>
+          <a class="text-white text-3xl mr-2" href="index.htm">Home</a>
+        </li>
+        <li class="flex items-center text-3xl">
+          <i class="fas fa-chevron-right text-xl" aria-hidden="true"></i>
+          <span class="ml-2">/ Disclaimer</span>
+        </li>
+      </ol>
+    </div>
+  </section>
   
    <!-- breadcrumb end  -->
 
-   <!-- Gallery section -->
-   <div class="mx-5 md:mx-16 my-5 md:my-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6">
-    <!-- Gallery Images -->
-    <div class="bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/1.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/1.jpg" alt="Gallery Image 1" class="w-full h-96 object-cover"></a>
-        </figure>
-        
-    </div>
-    <div class="bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/2.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/2.jpg" alt="Gallery Image 2" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class=" bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/3.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/3.jpg" alt="Gallery Image 3" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class=" bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/4.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/4.jpg" alt="Gallery Image 4" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class="bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/5.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/5.jpg" alt="Gallery Image 5" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class=" bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/6.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/6.jpg" alt="Gallery Image 6" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class=" bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/7.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/7.jpg" alt="Gallery Image 7" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class="bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/8.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/8.jpg" alt="Gallery Image 8" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class=" bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/9.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/9.jpg" alt="Gallery Image 9" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class=" bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/10.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/10.jpg" alt="Gallery Image 10" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class="bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/11.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/11.jpg" alt="Gallery Image 11" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class=" bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/12.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/12.jpg" alt="Gallery Image 12" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class=" bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/13.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/13.jpg" alt="Gallery Image 13" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class="bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/14.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/14.jpg" alt="Gallery Image 14" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class=" bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/15.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/15.jpg" alt="Gallery Image 15" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class=" bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/16.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/16.jpg" alt="Gallery Image 16" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class="bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/17.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/17.jpg" alt="Gallery Image 17" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class=" bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/18.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/18.jpg" alt="Gallery Image 18" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class=" bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/19.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/19.jpg" alt="Gallery Image 19" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
-    <div class="bg-white border border-gray-100 px-4 py-2 rounded-xl shadow-xl cursor-pointer">
-        <figure class="overflow-hidden rounded-xl">
-            <a href="assets/images/gallery/20.jpg" data-lightbox="figma-training" data-title="Gallery"> 
-              <img src="assets/images/gallery/20.jpg" alt="Gallery Image 20" class="w-full h-96 object-cover"></a>
-        </figure>
-    </div>
+   <!-- Privacy Policy section -->
+    <section class="container-fluid bg-light py-3">
+  <div class="container mx-auto my-3">
+    <section class=" bg-light py-3">
+      <div class=" my-3">
+        <div class="bg-white my-3 mx-20 p-5 border shadow-lg text-justify space-y-3">
+          <p>Effective Date: 16<sup>th</sup> July, 2024</p>
+
+          <p>
+            (company Name) (also referred as “(company abbr)”, “us”, “we” or “our” throughout this policy content)
+            operates the (Company URL) website and mobile application (here in after referred to as the “Service”).
+            Our policies regarding the collection, use, and disclosure of basic personal data while using the service
+            and the associated data are described in detail here.
+          </p>
+
+          <p>
+            Using your data and feedback, we continue upgrading of service. By using (Company Name), we assume that you
+            have trusted and agreed to the collection and use of information as per our policy. The terms defined in
+            this privacy policy have the same meaning as in our terms and conditions unless especially redefined in this
+            privacy policy in&nbsp;(Company URL)
+          </p>
+
+          <h4 class="text-3xl font-semibold mt-4">Uses and collection of Information</h4>
+
+          <p>
+            Different types of information for various purposes we have collected your data and it is always used for
+            improving our service just for you.
+          </p>
+
+          <p class="font-bold">Different Types of Collected Datas</p>
+
+          <p class="font-semibold mt-2">Personal Information Data</p>
+
+          <p>
+            To create your identity, we offer you to create your profile by providing your personally identifiable
+            information that is later used by other providers to connect you. Personally identifiable information
+            includes below, but not limited to:
+          </p>
+          <ul class="list-disc pl-5">
+            <li>Mobile Number</li>
+            <li>Email Address</li>
+            <li>First Name and Last name</li>
+            <li>Address, Province, City</li>
+            <li>Cookies and Usage Data</li>
+            <li>Skills and expertises&nbsp;</li>
+          </ul>
+
+          <p class="font-semibold mt-2">Usage Information Data</p>
+
+          <p>
+            We may also collect information on how people use our services (“Usage Data”). This Usage Data may include
+            various information such as your computer IP, browser details, mobile phone details, pages of the services,
+            pages that you navigate, timestamp you stay on pages, your engagements, UDIDs, etc.
+          </p>
+
+          <p class="font-semibold mt-2">Tracking and Cookies Data</p>
+
+          <p>
+            Using cookies and similar tracking technologies, we track the activities of our services and hold certain
+            information.
+          </p>
+
+          <p>
+            Cookies are files with small amount of data which may include anonymous unique identifiers and are sent to
+            your browsers from a website and stored on your devices. Tracking technologies use tags and scripts to
+            collect information to track helping to improve our services.
+          </p>
+
+          <p>
+            Instructing your browser to refuse all cookies or monitoring the cookies can be done. However, if you do not
+            accept cookies, you may not be able to use some portions of our services that may depend on your available
+            cookies.
+          </p>
+
+          <p>Examples of cookies we use:</p>
+
+          <ul class="list-disc pl-5">
+            <li><strong>Session Cookies</strong> – Session cookies are used to operate our services.</li>
+            <li><strong>Preference Cookies</strong> – Preference cookies are used to remember your preferences and
+              various settings.</li>
+            <li><strong>Security Cookies</strong> –&nbsp; Security cookies are used for security purposes.</li>
+          </ul>
+
+          <h4 class="text-lg font-semibold mt-4">Uses of Data</h4>
+
+          <p>(Company Name) uses the collected data for various purposes:</p>
+
+          <ul class="list-disc pl-5">
+            <li>Providing and maintaining the service</li>
+            <li>Notifying you about changes to our service</li>
+            <li>Letting you participate in interactive features of our service</li>
+            <li>Providing customer care and support</li>
+            <li>Providing analysis or valuable information so that we can improve the service</li>
+            <li>Monitoring the usage of the service</li>
+            <li>Detecting, preventing and addressing technical issues</li>
+          </ul>
+
+          <h4 class="text-lg font-semibold mt-4">Transfer Of Data</h4>
+
+          <p>
+            Your information, including Personal Data, may be transferred to the server and maintained on server
+            computers.
+          </p>
+
+          <p>
+            If you are outside Nepal and choose to provide information to us, please understand that we transfer your
+            data to our servers in Nepal/ USA or India and process it there.
+          </p>
+
+          <p>
+            Your consent to this Privacy Policy along with your submission of such information means that you agree with
+            that transfer.
+          </p>
+
+          <p>
+            (Company Name) will take all the necessary steps to ensure that your data is secure and as per this Privacy
+            Policy and no transfer of your Personal Data to an organization or a country will take place before ensuring
+            the security of your data and other personal information.
+          </p>
+
+          <h4 class="text-lg font-semibold mt-4">Disclosure Of Data</h4>
+
+          <p>
+            (Company Name) may disclose your Personal Data in the good faith belief that such action is necessary to:
+          </p>
+
+          <h4 class="text-lg font-semibold mt-4">Security Of Data</h4>
+
+          <p>
+            Knowing the importance of security of your data is important to us, but remember that no method of
+            transmission over the Internet, or method of electronic storage is 100% secure. We are always working to
+            protect your Personal Data, but we cannot guarantee its absolute security.
+          </p>
+
+          <h4 class="text-lg font-semibold mt-4">Service Providers</h4>
+
+          <p>
+            In order to provide you our services, we may employ third party companies and individuals (“Service
+            Providers”), who may provide the Service on our behalf, perform Service-related services or assist us in
+            analyzing how our Service is used.
+          </p>
+
+          <p>
+            To provide the services on our behalf, these third parties may have access to your personal data but are
+            obligated not to disclose or use it for any other purpose.
+          </p>
+
+          <h4 class="text-lg font-semibold mt-4">Other Sites</h4>
+
+          <p>
+            Our Service may contain other sites links that are and are not operated by us. If you click on a third-party
+            link, we refer it as third party’s site. We strongly advise you to review the Privacy Policy on that site.
+          </p>
+
+          <p>
+            We may not have control over such sites and take no responsibility for the content they post, privacy
+            policies or their practices.
+          </p>
+
+          <h4 class="text-lg font-semibold mt-4">Children’s Privacy</h4>
+
+          <p>
+            We do not address anyone under 18 (“Children”). We knowingly do not collect any personal details from anyone
+            under 18, it is parental or guardian’s duty to aware your children. If found sharing of the personal data by
+            children you can contact to us. If we become aware that we have collected Personal Data from children
+            without parental verification, we shall take the necessary steps to remove information from our servers.
+          </p>
+
+          <h4 class="text-lg font-semibold mt-4">Changes To This Privacy Policy</h4>
+
+          <p>
+            We regularly update our Privacy Policy from time to time. If any revision on our Privacy Policy should take
+            place, we will notify you by posting it on this page.
+          </p>
+
+          <p>
+            We will let you know about the changes via email and/or a prominent notice on our Service, before the actual
+            changes becoming effective and will also update the “effective date” at the top of this Privacy Policy.
+          </p>
+
+          <p>
+            We recommend you to review this Privacy Policy periodically for any changes. After posting on this page,
+            Privacy Policy will be effective from the date posted.
+          </p>
+
+          <h4 class="text-lg font-semibold mt-4">Contact Us</h4>
+
+          <p>
+            If you have any questions about this Privacy Policy, please contact us:&nbsp;info@companyname.com
+          </p>
+        </div>
+      </div>
+    </section>
   </div>
+</section>
 
 
 
+   
+  
+ 
 
 <!-- Footer section start -->
 <section>

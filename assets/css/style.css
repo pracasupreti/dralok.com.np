@@ -8,11 +8,7 @@
         display: none!important;
     }
 }
-    @media (max-width: 992px) {
-    .headermenu{
-        display: none!important;
-    }
-}
+   
 @media (max-width: 500px) {
     .booking{
         display: none!important;

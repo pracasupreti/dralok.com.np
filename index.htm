@@ -443,7 +443,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <a href="https://wa.me/9779852025735?text=Hi%2C%20I%27m%20contacting%20you%20through%20www.pracas.net.%20" class="float"target="_blank">
   <!-- <i class="ff fa-whatsapp my-float"></i> -->
-  <img src="assets/images/footer/footer-logo.png" alt="" class="w-12 h-12 mt-[7px] ml-[6px]">
+  <!-- <img src="assets/images/footer/footer-logo.png" alt="" class="w-12 h-12 mt-[7px] ml-[6px]"> -->
+  <div class="tooltip"><img src="assets/images/footer/footer-logo.png" alt="" class="w-12 h-12 mt-[7px]">
+    <span class="tooltiptext">WhatsApp Me</span>
+  </div>
 </a>
 
 <!-- // WhatsApp Chat Widget -->
@@ -495,6 +498,43 @@
     }
     
   /* WhatsApp Float Ends Here    */
+
+  /* tooltip  */
+  .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(74, 187, 59);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 12px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(74, 187, 59) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
  </style>
 
 <!-- Go to top  -->

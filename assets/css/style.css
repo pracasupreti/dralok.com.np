@@ -14,3 +14,52 @@
         display: none!important;
     }
 }
+
+
+/* WhatsApp Float Starts Here  */
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 95px;
+    right: 30px;
+    background-color: #18af2c;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #5e5e5e;
+    z-index: 100;
+    }
+    .ff {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    
+    }
+    
+    .my-float {
+    margin-top: 17px;
+    }
+    
+    .float-fb{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 165px;
+    right: 30px;
+    background-color: #21ac14;
+     
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100; 
+    
+    }
+    
+  /* WhatsApp Float Ends Here    */

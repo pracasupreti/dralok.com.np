@@ -16,15 +16,15 @@
 }
 
 
-/* WhatsApp Float Starts Here  */
+ /* WhatsApp Float Starts Here  */
 
-.float {
+ .float {
     position: fixed;
     width: 60px;
     height: 60px;
     bottom: 95px;
     right: 30px;
-    background-color: #18af2c;
+    background-color: transparent;
     color: #FFF;
     border-radius: 50px;
     text-align: center;
@@ -52,7 +52,7 @@
     height: 60px;
     bottom: 165px;
     right: 30px;
-    background-color: #21ac14;
+    background-color: transparent;
      
     border-radius: 50px;
     text-align: center;
@@ -61,5 +61,60 @@
     z-index: 100; 
     
     }
+
+    .whatsapp-image{
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+
+    .whatsapp-text{
+      margin-top: 9px;
+    }
+
+    .arrow{
+      height: 0.75rem;
+      width: 0.75rem;
+      margin-top: 14px;
+      margin-left: 0.25rem;
+    }
+
+    .main-logo{
+      height: 3.5rem;
+      width: 3.5rem;
+      margin-top: 3px;
+      margin-left: 2px;
+    }
     
   /* WhatsApp Float Ends Here    */
+
+ /* message  */
+ .callout {
+  position: fixed;
+  bottom: 96px;
+  right: 92px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.callout-header {
+  padding: 8px 8px;
+  background: #555;
+  font-size: 14px;
+  color: white;
+  border-radius: 5px;
+}
+
+.closebtn {
+  position: absolute;
+  top: -16px;
+  left: 140px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  font: bold;
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}

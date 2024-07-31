@@ -419,11 +419,24 @@
 <!-- // WhatsApp Chat Widget -->
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<div class="callout flex">
+  <div class="callout-header inline-flex">
+    <div>
+      <img src="assets/images/whatsapp/1.png" alt="" class="w-10 h-10">
+    </div>
+    <div class="mt-[9px]">
+      WhatsApp Me
+    </div>
+    <div>
+      <img src="assets/images/whatsapp/2.png" alt="" class="w-3 h-3 mt-[14px] ml-1">
+    </div>
+  </div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+</div>
 <a href="https://wa.me/9779852025735?text=Hi%2C%20I%27m%20contacting%20you%20through%20www.pracas.net.%20" class="float"target="_blank">
   <!-- <i class="ff fa-whatsapp my-float"></i> -->
   <!-- <img src="assets/images/footer/footer-logo.png" alt="" class="w-12 h-12 mt-[7px] ml-[6px]"> -->
-  <div class="tooltip"><img src="assets/images/footer/footer-logo.png" alt="" class="w-12 h-12 mt-[7px]">
-    <span class="tooltiptext">WhatsApp Me</span>
+  <div><img src="https://sriyog.com/images/team/pracas.png" alt="" class="w-14 h-14 mt-[3px] ml-[2px]">
   </div>
 </a>
 
@@ -477,41 +490,36 @@
     
   /* WhatsApp Float Ends Here    */
 
-  /* tooltip  */
-  .tooltip {
-  position: relative;
-  display: inline-block;
+ /* message  */
+ .callout {
+  position: fixed;
+  bottom: 96px;
+  right: 92px;
+  margin-left: 20px;
+  max-width: 300px;
 }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: rgb(74, 187, 59);
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
+.callout-header {
+  padding: 8px 8px;
+  background: #555;
+  font-size: 14px;
+  color: white;
+  border-radius: 5px;
+}
+
+.closebtn {
   position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px;
-  font-size: 12px;
+  top: -16px;
+  left: 140px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  font: bold;
 }
 
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: rgb(74, 187, 59) transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
+.closebtn:hover {
+  color: lightgrey;
 }
  </style>
 
